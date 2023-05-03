@@ -1,1 +1,3 @@
-.bot_token
+__pycache__/
+
+bot_token.py
