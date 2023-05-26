@@ -1,0 +1,11 @@
+body {
+  font-family: Arial, Verdana, sans-serif; /* Yazı tipi ailesi */
+  font-size: 11px; /* <p></p> etiketindeki ana yazı tipi boyutu */
+  background-color: #f0f0f0; /* Web sayfasının arka plan rengi */
+  color: #333; /* Metin rengi */
+}
+h1 {
+  color: #00a800; /* Başlık rengi */
+  font-size: 24pt; /* Başlık yazı tipi boyutu */
+  font-family: Georgia, Times, serif; /* Başlık için kullanılan yazı tipi ailesi */
+}
