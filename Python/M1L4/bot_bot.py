@@ -33,3 +33,5 @@ async def heh(ctx, count_heh = 5):
 #     if ctx.invoked_subcommand is None:
 #         await ctx.send(f'No, {ctx.subcommand_passed} is not cool')
 bot.run(token)
+
+#yorum
