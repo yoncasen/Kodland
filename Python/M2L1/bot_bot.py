@@ -22,19 +22,20 @@ async def heh(ctx, count_heh = 5):
 
 @bot.command()
 async def mem(ctx):
-    with open('Python/M2L1/images/mem1.png', 'rb') as f: 
+    with open('Python/M2L1/images/mem2.jpg', 'rb') as f: 
         picture = discord.File(f)
     await ctx.send(file=picture)
 
 
 ######## Random Meme
-# @bot.command()
-# async def memr(ctx):
-#     img_name = random.choice(os.listdir('Python/M2L1/images'))
-#     with open(f'Python/M2L1/images/{img_name}', 'rb') as f:
-#         picture = discord.File(f)
-#     
-#     await ctx.send(file=picture)
+@bot.command()
+async def memr(ctx):
+    img_name = random.choice(os.listdir('Python/M2L1/images'))
+    
+    with open(f'Python/M2L1/images/{img_name}', 'rb') as f:
+        picture = discord.File(f)
+    
+    await ctx.send(file=picture)
 
 
 ######### Extra Task API
