@@ -42,5 +42,27 @@ def end(size, lights, device):
                                                     )
                         )
 
+# Form
+@app.route('/form')
+def form():
+    return render_template('form.html')
+
+#Formun sonuçları
+@app.route('/submit', methods=['GET','POST'])
+def submit_form():
+    # Veri toplama için değişkenleri tanımlayın
+    name = request.form['name']
+    email = request.form['email']
+    date = request.form['date']
+    address = request.form['address']
+
+    # Verilerinizi kaydedebilir veya e-posta ile gönderebilirsiniz
+    return render_template('form_result.html', 
+                           # Değişkenleri buraya yerleştirin
+                           name=name,
+                           email=email,
+                           date=date,
+                           address= address
+                           )
 
 app.run(debug=True)
