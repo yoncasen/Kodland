@@ -22,7 +22,7 @@ ul {
 }
 
 li::before {
-  content: "• ";
+  content: "?";
   color: #fd98fb;
   font-size: 16px;
 }
