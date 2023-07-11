@@ -56,6 +56,9 @@ def submit_form():
     date = request.form['date']
     address = request.form['address']
 
+    with open(r'Python\M3L3\TUR_Calculator-main\static\form.txt', 'a',) as f:
+      f.write(name + "/"+ email + "/"+ date + "/"+ address + "/" + "\n")
+
     # Verilerinizi kaydedebilir veya e-posta ile gönderebilirsiniz
     return render_template('form_result.html', 
                            # Değişkenleri buraya yerleştirin
